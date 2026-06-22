@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>LIMITLESS</title>
-
+<div class="logo-sub">
+OCUPA TU LUGAR
+</div>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -142,7 +144,80 @@ padding:120px 40px;
 font-size:56px;
 margin-bottom:30px;
 }
+html{
+scroll-behavior:smooth;
+}
 
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:25px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+}
+
+.nav-logo{
+font-size:14px;
+letter-spacing:8px;
+color:white;
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:14px;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#C8A96B;
+}
+
+.nav-btn{
+border:1px solid #C8A96B;
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+color:#C8A96B;
+}
+
+.hero{
+padding-top:120px;
+}
+
+.logo{
+font-size:28px;
+letter-spacing:18px;
+}
+
+.logo-sub{
+color:#C8A96B;
+letter-spacing:10px;
+margin-top:15px;
+margin-bottom:30px;
+font-size:14px;
+}
+
+.card{
+transition:.35s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#C8A96B;
+box-shadow:0 20px 40px rgba(200,169,107,.15);
+}
 @media(max-width:768px){
 
 .hero{
@@ -169,7 +244,26 @@ flex-direction:column;
 
 </style>
 </head>
+<nav class="navbar">
 
+<div class="nav-logo">
+LIMITLESS
+</div>
+
+<div class="nav-links">
+<a href="#metodo">Método IAM</a>
+<a href="#programas">Programas</a>
+<a href="#cta">Aplicar</a>
+</div>
+
+<a
+class="nav-btn"
+href="https://wa.me/5491171102284?text=Hola%20Marcos.%20Vi%20la%20página%20de%20LIMITLESS%20y%20quiero%20saber%20cuál%20de%20los%20programas%20es%20para%20mí."
+target="_blank">
+Aplicar
+</a>
+
+</nav>
 <body>
 
 <section class="hero">
@@ -212,7 +306,7 @@ Explorar Método
 
 </section>
 
-<section class="section" id="metodo">
+<section class="section" id="programas">
 
 <div class="container">
 
@@ -286,7 +380,7 @@ USD 1500
 
 </section>
 
-<section class="footer-cta">
+<section class="footer-cta" id="cta">
 
 <h2>
 ¿Estás listo para ocupar tu lugar?
