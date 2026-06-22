@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LIMITLESS</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#050505;
+color:white;
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:80px;
+background:
+linear-gradient(to right, rgba(5,5,5,.92), rgba(5,5,5,.45)),
+url('hero.jpg');
+background-size:cover;
+background-position:center;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+width:100%;
+}
+
+.logo{
+font-size:20px;
+letter-spacing:18px;
+margin-bottom:20px;
+font-weight:300;
+}
+
+.line{
+height:2px;
+width:220px;
+background:#C8A96B;
+margin-bottom:40px;
+}
+
+h1{
+font-size:72px;
+line-height:1.1;
+font-weight:700;
+max-width:700px;
+}
+
+.gold{
+color:#C8A96B;
+}
+
+.subtitle{
+margin-top:30px;
+font-size:22px;
+line-height:1.6;
+max-width:700px;
+color:#d8d8d8;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+margin-top:40px;
+}
+
+.btn{
+padding:16px 32px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:#C8A96B;
+color:black;
+}
+
+.btn-secondary{
+border:1px solid #C8A96B;
+color:#C8A96B;
+}
+
+.section{
+padding:120px 80px;
+}
+
+.section-title{
+font-size:48px;
+margin-bottom:60px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#0f0f0f;
+border:1px solid rgba(200,169,107,.2);
+padding:30px;
+border-radius:12px;
+}
+
+.card h3{
+margin-bottom:20px;
+color:#C8A96B;
+}
+
+.program-price{
+font-size:34px;
+margin:15px 0;
+}
+
+.footer-cta{
+text-align:center;
+padding:120px 40px;
+}
+
+.footer-cta h2{
+font-size:56px;
+margin-bottom:30px;
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:40px;
+}
+
+h1{
+font-size:46px;
+}
+
+.section{
+padding:80px 30px;
+}
+
+.footer-cta h2{
+font-size:36px;
+}
+
+.buttons{
+flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="logo">
+LIMITLESS
+</div>
+
+<div class="line"></div>
+
+<h1>
+No te falta conocimiento.<br>
+<span class="gold">Te falta ocupar tu lugar.</span>
+</h1>
+
+<p class="subtitle">
+Transformamos conocimiento invisible en autoridad visible y autoridad visible en negocios rentables.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn btn-primary"
+href="https://wa.me/5491171102284?text=Hola%20Marcos.%0A%0AVi%20la%20p%C3%A1gina%20de%20LIMITLESS%20y%20quiero%20saber%20cu%C3%A1l%20de%20los%20programas%20es%20para%20m%C3%AD."
+target="_blank">
+Aplicar
+</a>
+
+<a
+class="btn btn-secondary"
+href="#metodo">
+Explorar Método
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="metodo">
+
+<div class="container">
+
+<h2 class="section-title">
+Método IAM
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>IDENTIDAD</h3>
+<p>Definir quién sos, qué representás y qué transformación generás.</p>
+</div>
+
+<div class="card">
+<h3>AUTORIDAD</h3>
+<p>Convertir experiencia en posicionamiento y confianza.</p>
+</div>
+
+<div class="card">
+<h3>MONETIZACIÓN</h3>
+<p>Crear ofertas, conseguir clientes y construir un negocio rentable.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Programas
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>LIMITLESS I</h3>
+<p>Claridad</p>
+<div class="program-price">
+USD 30
+</div>
+<p>Mensual</p>
+</div>
+
+<div class="card">
+<h3>LIMITLESS II</h3>
+<p>Posicionamiento y Valor</p>
+<div class="program-price">
+USD 497
+</div>
+<p>90 días grupal</p>
+</div>
+
+<div class="card">
+<h3>LIMITLESS III</h3>
+<p>Negocio Limitless</p>
+<div class="program-price">
+USD 1500
+</div>
+<p>90 días 1 a 1</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="footer-cta">
+
+<h2>
+¿Estás listo para ocupar tu lugar?
+</h2>
+
+<a
+class="btn btn-primary"
+href="https://wa.me/5491171102284?text=Hola%20Marcos.%0A%0AVi%20la%20p%C3%A1gina%20de%20LIMITLESS%20y%20quiero%20saber%20cu%C3%A1l%20de%20los%20programas%20es%20para%20m%C3%AD."
+target="_blank">
+Aplicar
+</a>
+
+</section>
+
+</body>
+</html>
