@@ -115,3 +115,41 @@ Resultado:
 Negocio funcionando.
 
 ---
+# ROADMAP DE CONSTRUCCIÓN LIMITLESS
+
+## FASE 1 - FUNDACIÓN
+
+- Filosofía
+- Misión
+- Visión
+- Método IAM
+- Cliente Ideal
+- Promesa Central
+
+## FASE 2 - PROGRAMAS
+
+- LIMITLESS I
+- LIMITLESS II
+- LIMITLESS III
+
+## FASE 3 - CONTENIDO
+
+- Reels
+- Storytelling
+- Hooks
+- CTA
+- Casos de Éxito
+
+## FASE 4 - VENTAS
+
+- Oferta
+- Página de Ventas
+- Scripts de Cierre
+- Objeciones
+
+## FASE 5 - ESCALAMIENTO
+
+- Comunidad
+- Certificación
+- SOPs
+- Biblioteca de Recursos
