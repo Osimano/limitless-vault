@@ -1,0 +1,886 @@
+{
+ "name": "Plan Belén Díaz",
+ "handle": "@soybelendiaz",
+ "period": "octubre – noviembre 2026",
+ "lede": "Fallas del perfil, puesta a punto y calendario hacia la apertura de Despierta. Marcá cada tarea cuando esté hecha: los dos ven los mismos cambios.",
+ "people": [
+  "Marcos",
+  "Belén"
+ ],
+ "tasks": [
+  {
+   "detail": "0 de las últimas 10 publicaciones muestran a una alumna. Grabar a 2 o 3 alumnas del Bootcamp con el antes, el proceso y el después.",
+   "due": "2026-10-30",
+   "group": "fallas",
+   "order": 1,
+   "priority": "Urgente",
+   "title": "Grabar casos de éxito en video (formato silla)",
+   "id": "f01"
+  },
+  {
+   "detail": "Hoy suben 3 historias sueltas sin relación. Aplicar una creencia distinta por día, en secuencias de 4 a 6 historias.",
+   "due": "2026-10-19",
+   "dueLabel": "Desde hoy",
+   "group": "fallas",
+   "order": 2,
+   "priority": "Urgente",
+   "title": "Subir historias con el calendario de creencias",
+   "id": "f02"
+  },
+  {
+   "detail": "Reemplazar “Reacciona para saber más” por una palabra clave para la lista de espera de Despierta. Esta semana, además, cuenta atrás al último Bootcamp (21 oct).",
+   "due": "2026-10-19",
+   "dueLabel": "Hoy",
+   "group": "fallas",
+   "order": 3,
+   "priority": "Urgente",
+   "title": "Cambiar el CTA de historias: “Respóndeme DESPIERTA”",
+   "id": "f03"
+  },
+  {
+   "detail": "Solo 2 de 10 posts piden comentar una palabra y son los únicos con conversación real. Usar DESPIERTA (lista de espera y apertura) y PAUSA (recurso), conectadas a ManyChat.",
+   "due": "2026-10-19",
+   "dueLabel": "Desde hoy",
+   "group": "fallas",
+   "order": 4,
+   "priority": "Urgente",
+   "title": "Cerrar cada post del feed con una palabra clave",
+   "id": "f04"
+  },
+  {
+   "detail": "El Bootcamp de 40 € deja de ofrecerse: la edición del 21–23 oct es la última. Desde el 24 oct solo se comunica Despierta, que abre en fechas concretas, con lista de espera entre aperturas.",
+   "due": "2026-10-19",
+   "dueLabel": "Hoy",
+   "group": "fallas",
+   "order": 5,
+   "priority": "Urgente",
+   "title": "Una sola puerta: Despierta (497 USD), por aperturas y sin 1 a 1",
+   "id": "f05"
+  },
+  {
+   "detail": "El copy actual podría ser de cualquier coach. Explicar por qué lo que ya probó no funcionó y cómo actúan Comprender, Elegir y Acción.",
+   "due": "2026-10-26",
+   "dueLabel": "Desde semana 2",
+   "group": "fallas",
+   "order": 6,
+   "priority": "Alta",
+   "title": "Explicar el mecanismo DESBLOQUEA (un MOFU por semana)",
+   "id": "f06"
+  },
+  {
+   "detail": "Hoy dice “+5 años” y la web dice 7 años y +1.000 mujeres. Nueva bio: a quién ayuda, Método DESBLOQUEA®, +1.000 mujeres y la acción de hoy.",
+   "due": "2026-10-19",
+   "dueLabel": "Hoy",
+   "group": "fallas",
+   "order": 7,
+   "priority": "Alta",
+   "title": "Bio nueva",
+   "id": "f07"
+  },
+  {
+   "detail": "No tiene ninguna publicación fijada. Fijado 1: por qué entender la herida no alcanza. Fijado 2: carrusel del método. Fijado 3: caso de éxito en video.",
+   "due": "2026-11-13",
+   "group": "fallas",
+   "order": 8,
+   "priority": "Alta",
+   "title": "Fijar los 3 posts: posicionamiento, método y caso de éxito",
+   "id": "f08"
+  },
+  {
+   "detail": "Una palabra grande por historia, contraste y márgenes. En videos hablados, un título corto con la palabra clave resaltada.",
+   "due": "2026-10-19",
+   "dueLabel": "Desde hoy",
+   "group": "fallas",
+   "order": 9,
+   "priority": "Media",
+   "title": "Simplificar el diseño de las historias",
+   "id": "f09"
+  },
+  {
+   "detail": "Hoy habla de dinero, crianza, pareja, madre y autoestima sin hilo. Todo debe salir de “lo entiendo y lo vuelvo a repetir”.",
+   "due": "2026-10-26",
+   "dueLabel": "Desde semana 2",
+   "group": "fallas",
+   "order": 10,
+   "priority": "Media",
+   "title": "Unificar el avatar en un solo dolor",
+   "id": "f10"
+  },
+  {
+   "detail": "TESTIMONIOS hoy son halagos, no transformaciones. EVENTO se reemplaza por una destacada de Despierta. Falta Prensa con la entrevista en Tenerife Plus TV.",
+   "due": "2026-11-04",
+   "group": "fallas",
+   "order": 11,
+   "priority": "Media",
+   "title": "Rehacer destacadas: Casos, Método, Por dentro, Prensa y Evento",
+   "id": "f11"
+  },
+  {
+   "due": "2026-10-19",
+   "group": "feed",
+   "order": 1,
+   "tag": "MOFU",
+   "title": "Reel a cámara: “Por qué entender tu herida no alcanza para dejar de repetirla”",
+   "id": "p01"
+  },
+  {
+   "due": "2026-10-20",
+   "group": "feed",
+   "order": 2,
+   "tag": "BOFU",
+   "title": "Reel caso de éxito: alumna anterior, antes / proceso / después",
+   "id": "p02"
+  },
+  {
+   "due": "2026-10-21",
+   "group": "feed",
+   "order": 3,
+   "tag": "TOFU",
+   "title": "Reel: “Sabes exactamente qué tienes que cambiar… y aun así lo vuelves a hacer”",
+   "id": "p03"
+  },
+  {
+   "due": "2026-10-22",
+   "group": "feed",
+   "order": 4,
+   "tag": "Por dentro",
+   "title": "Reel con clips del Día 2 del Bootcamp (Elegir)",
+   "id": "p04"
+  },
+  {
+   "due": "2026-10-23",
+   "group": "feed",
+   "order": 5,
+   "tag": "MOFU",
+   "title": "Reel: “Por qué dejé de hacer talleres de 3 días” y por qué ahora solo trabajo dentro de Despierta",
+   "id": "p05"
+  },
+  {
+   "due": "2026-10-26",
+   "group": "feed",
+   "order": 6,
+   "tag": "TOFU",
+   "title": "Reel: “¿Cuánto de lo que haces hoy lo decide la niña que fuiste?”",
+   "id": "p06"
+  },
+  {
+   "due": "2026-10-27",
+   "group": "feed",
+   "order": 7,
+   "tag": "TOFU",
+   "title": "Recurso gratis: ejercicio “Pausa de 3 segundos” (comenta PAUSA)",
+   "id": "p07"
+  },
+  {
+   "due": "2026-10-28",
+   "group": "feed",
+   "order": 8,
+   "tag": "MOFU",
+   "title": "Reel de valores: “Lo que dejé de hacer cuando entendí mi propia herida”",
+   "id": "p08"
+  },
+  {
+   "due": "2026-10-29",
+   "group": "feed",
+   "order": 9,
+   "tag": "MOFU",
+   "title": "Carrusel: por qué las afirmaciones positivas no cambian un patrón",
+   "id": "p09"
+  },
+  {
+   "due": "2026-10-30",
+   "group": "feed",
+   "order": 10,
+   "tag": "BOFU",
+   "title": "Formato silla: entrevista a una alumna del Bootcamp",
+   "id": "p10"
+  },
+  {
+   "due": "2026-11-02",
+   "group": "feed",
+   "order": 11,
+   "tag": "TOFU",
+   "title": "Reel: “Te pasa que pides perdón incluso cuando no hiciste nada”",
+   "id": "p11"
+  },
+  {
+   "due": "2026-11-03",
+   "group": "feed",
+   "order": 12,
+   "tag": "MOFU",
+   "title": "Reel: “Hice años de terapia y seguía igual. Esto fue lo que faltó”",
+   "id": "p12"
+  },
+  {
+   "due": "2026-11-04",
+   "group": "feed",
+   "order": 13,
+   "tag": "MOFU",
+   "title": "Reel con fragmento de la entrevista en Tenerife Plus TV",
+   "id": "p13"
+  },
+  {
+   "due": "2026-11-05",
+   "group": "feed",
+   "order": 14,
+   "tag": "Por dentro",
+   "title": "Reel: una devolución real a una alumna (con permiso)",
+   "id": "p14"
+  },
+  {
+   "due": "2026-11-06",
+   "group": "feed",
+   "order": 15,
+   "tag": "BOFU",
+   "title": "Caso de éxito + anuncio: “Despierta abre el lunes 9; es la única forma de trabajar conmigo”",
+   "id": "p15"
+  },
+  {
+   "due": "2026-11-09",
+   "group": "feed",
+   "order": 16,
+   "tag": "BOFU",
+   "title": "Reel: “Despierta está abierto”: qué es, para quién y casos del mes",
+   "id": "p16"
+  },
+  {
+   "due": "2026-11-10",
+   "group": "feed",
+   "order": 17,
+   "tag": "MOFU",
+   "title": "Carrusel: los 3 pasos DESBLOQUEA dentro de Despierta (va a fijado 2)",
+   "id": "p17"
+  },
+  {
+   "due": "2026-11-11",
+   "group": "feed",
+   "order": 18,
+   "tag": "BOFU",
+   "title": "Formato silla: segunda alumna, con otro dolor",
+   "id": "p18"
+  },
+  {
+   "due": "2026-11-12",
+   "group": "feed",
+   "order": 19,
+   "tag": "Objeciones",
+   "title": "Reel: responder “no es el momento”, “ya probé terapia” y “no tengo tiempo”",
+   "id": "p19"
+  },
+  {
+   "due": "2026-11-13",
+   "group": "feed",
+   "order": 20,
+   "tag": "Escasez",
+   "title": "Reel: “Cuando cierre el domingo, no hay otra forma de entrar. No hago 1 a 1”",
+   "id": "p20"
+  },
+  {
+   "due": "2026-10-25",
+   "dueLabel": "19–25 oct",
+   "group": "rutina",
+   "order": 1,
+   "tag": "Historias",
+   "title": "Semana 1: historias con el calendario de creencias + cuenta atrás del Bootcamp",
+   "id": "r01"
+  },
+  {
+   "detail": "Pocas conversaciones: más TOFU. Chats pero pocas agendas: más MOFU. Agendas sin cierre: más BOFU.",
+   "due": "2026-10-25",
+   "group": "rutina",
+   "order": 2,
+   "tag": "Métricas",
+   "title": "Domingo: revisar chats, agendas y cierres y ajustar la semana",
+   "id": "r02"
+  },
+  {
+   "due": "2026-11-01",
+   "dueLabel": "26 oct – 1 nov",
+   "group": "rutina",
+   "order": 3,
+   "tag": "Historias",
+   "title": "Semana 2: historias de valor + CTA a lista de espera los martes",
+   "id": "r03"
+  },
+  {
+   "due": "2026-11-01",
+   "group": "rutina",
+   "order": 4,
+   "tag": "Métricas",
+   "title": "Domingo: revisar chats, agendas y cierres y ajustar la semana",
+   "id": "r04"
+  },
+  {
+   "due": "2026-11-08",
+   "dueLabel": "2–8 nov",
+   "group": "rutina",
+   "order": 5,
+   "tag": "Historias",
+   "title": "Semana 3: historias de valor + anuncio de la apertura el viernes 6",
+   "id": "r05"
+  },
+  {
+   "due": "2026-11-08",
+   "group": "rutina",
+   "order": 6,
+   "tag": "Métricas",
+   "title": "Domingo: revisar chats, agendas y cierres y ajustar la semana",
+   "id": "r06"
+  },
+  {
+   "due": "2026-11-15",
+   "dueLabel": "9–15 nov",
+   "group": "rutina",
+   "order": 7,
+   "tag": "Historias",
+   "title": "Semana 4: apertura de Despierta, con cuenta atrás hasta el cierre del domingo 15",
+   "id": "r07"
+  },
+  {
+   "due": "2026-11-15",
+   "group": "rutina",
+   "order": 8,
+   "tag": "Métricas",
+   "title": "Domingo: revisar chats, agendas y cierres y ajustar la semana",
+   "id": "r08"
+  },
+  {
+   "detail": "DESPIERTA (lista de espera y apertura) y PAUSA (recurso gratis), con respuesta automática y etiqueta de lista de espera.",
+   "due": "2026-10-20",
+   "group": "setup",
+   "order": 1,
+   "title": "Configurar palabras clave en ManyChat",
+   "id": "s01"
+  },
+  {
+   "detail": "Avatar, mecanismo, enemigo común y percepción buscada, tal como están en el documento.",
+   "due": "2026-10-22",
+   "group": "setup",
+   "order": 2,
+   "title": "Validar las bases con Belén",
+   "id": "s02"
+  },
+  {
+   "detail": "Elegir 2 o 3 alumnas del Bootcamp con un cambio concreto y agendar la grabación.",
+   "due": "2026-10-23",
+   "group": "setup",
+   "order": 3,
+   "title": "Pedir permiso a alumnas para grabar testimonios",
+   "id": "s03"
+  },
+  {
+   "detail": "Por dónde la conoció, qué contenido la convenció, qué dolor la hizo comprar y qué tan convencida llegó (1 a 10).",
+   "due": "2026-10-24",
+   "group": "setup",
+   "order": 4,
+   "title": "Crear el formulario de onboarding",
+   "id": "s04"
+  },
+  {
+   "detail": "Guía o audio que se entrega con la palabra PAUSA (post del 27 oct).",
+   "due": "2026-10-26",
+   "group": "setup",
+   "order": 5,
+   "title": "Preparar el recurso gratis “Pausa de 3 segundos”",
+   "id": "s05"
+  },
+  {
+   "detail": "Propuesta: abre lunes 9 nov y cierra domingo 15 nov a las 23:59 (España); la lista de espera entra 24 h antes. Se anuncia el viernes 6 nov.",
+   "due": "2026-10-30",
+   "group": "setup",
+   "order": 6,
+   "title": "Confirmar fechas de la primera apertura de Despierta",
+   "id": "s06"
+  },
+  {
+   "detail": "Qué es, para quién, qué incluye, casos de éxito, fecha de cierre y que no hay 1 a 1.",
+   "due": "2026-11-06",
+   "group": "setup",
+   "order": 7,
+   "title": "Página de venta y link de pago de Despierta (497 USD)",
+   "id": "s07"
+  },
+  {
+   "detail": "Conversación corta desde la palabra DESPIERTA hasta el link de pago, o llamada breve si hay dudas.",
+   "due": "2026-11-06",
+   "group": "setup",
+   "order": 8,
+   "title": "Guion del setter para la apertura",
+   "id": "s08"
+  },
+  {
+   "detail": "Envío por ManyChat 24 h antes de abrir: acceso primero y fecha de cierre.",
+   "due": "2026-11-08",
+   "group": "setup",
+   "order": 9,
+   "title": "Mensaje de acceso anticipado para la lista de espera",
+   "id": "s09"
+  }
+ ],
+ "plan": [
+  {
+   "title": "Resumen",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "El contenido de Belén se reparte en tres funciones: atraer (TOFU), explicar su método (MOFU) y mostrar casos de éxito (BOFU). Las historias son el motor de venta: cada día tocan una creencia distinta de la clienta."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Hoy casi todo son reels de identificación: traen seguidoras, pero no explican por qué DESBLOQUEA funciona cuando otras cosas no.",
+      "No hay casos de éxito que muestren el proceso, solo capturas y agradecimientos.",
+      "El Bootcamp de 40 € deja de ofrecerse; la edición del 21–23 oct es la última. Desde ahí hay una sola puerta para trabajar con Belén: **Despierta (497 USD)**, sin 1 a 1, con aperturas en fechas concretas y lista de espera entre medio."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Las fallas del perfil, por prioridad, están en la pestaña Checklist."
+    }
+   ]
+  },
+  {
+   "title": "Las bases",
+   "lead": "Bases × ideas × acciones = marketing. Validar con Belén antes de grabar.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Base",
+      "Propuesta"
+     ],
+     "rows": [
+      [
+       "A quién le habla",
+       "Mujeres que ya saben qué tienen que cambiar, pero siguen repitiendo los mismos patrones y reaccionando en automático"
+      ],
+      [
+       "Dolor principal",
+       "“Lo entiendo todo y aun así lo vuelvo a hacer”"
+      ],
+      [
+       "Mecanismo único",
+       "Método DESBLOQUEA®: Comprender → Elegir → Acción. Va a la herida de la infancia que dispara la reacción, no solo al comportamiento"
+      ],
+      [
+       "Oferta",
+       "Despierta, 497 USD. Única forma de trabajar con Belén: no hay 1 a 1 ni otro producto. Abre en fechas concretas y cierra"
+      ],
+      [
+       "Mensaje de escasez",
+       "“Despierta abre pocas veces. Cuando abre, es la única oportunidad de entrar hasta la próxima apertura”"
+      ],
+      [
+       "Camino de venta",
+       "Entre aperturas: palabra DESPIERTA → lista de espera en ManyChat. En la apertura: la lista entra primero → setter → link de pago, o llamada corta si hay dudas"
+      ],
+      [
+       "Enemigo común",
+       "Lo que ya probó y no funcionó: años de terapia que solo explican, autoayuda, frases positivas y “fuerza de voluntad”"
+      ],
+      [
+       "Percepción buscada",
+       "Una mujer serena que ya pasó por eso, habla claro, sin humo y sin drama"
+      ],
+      [
+       "Prueba",
+       "+1.000 mujeres acompañadas, 7 años, entrevista en Tenerife Plus TV"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Cómo explicar el mecanismo:** explicar por qué lo demás no funcionó. Por qué entender el problema no alcanza para cambiarlo, por qué las afirmaciones no reprograman nada, y ahí entra Comprender, Elegir y Acción."
+    }
+   ]
+  },
+  {
+   "title": "Lo que queda fijo en el perfil",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Fijado",
+      "Qué es",
+      "Creencia que rompe",
+      "CTA"
+     ],
+     "rows": [
+      [
+       "1 · Posicionamiento",
+       "Reel “Por qué entender tu herida no alcanza para sanarla”",
+       "“Ya probé de todo”",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "2 · Método",
+       "Carrusel con los 3 pasos DESBLOQUEA y por qué es distinto",
+       "“No sé qué hace ella distinto”",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "3 · Caso de éxito",
+       "Video de una alumna: cómo estaba, qué hizo y cómo está hoy",
+       "“A mí no me va a funcionar”",
+       "Comenta DESPIERTA"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Bio:** a quién ayuda, Método DESBLOQUEA®, +1.000 mujeres y la acción de hoy. El link apunta siempre a Despierta."
+    },
+    {
+     "type": "p",
+     "text": "**Destacadas, en orden:** Casos de éxito (antes, proceso y después) · Método DESBLOQUEA · Por dentro · Despierta (reemplaza a EVENTO) · Prensa · Mi forma de pensar."
+    }
+   ]
+  },
+  {
+   "title": "TOFU, MOFU y BOFU",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Función",
+      "Qué logra",
+      "Formatos",
+      "Reglas"
+     ],
+     "rows": [
+      [
+       "TOFU · atención",
+       "Gente nueva y chats",
+       "Reel de identificación, reel que rompe una creencia, recurso gratis por palabra clave",
+       "Simple y entretenido. Hablar de la audiencia. No explicar el método acá"
+      ],
+      [
+       "MOFU · mecanismo",
+       "Que confíen y se anoten",
+       "“Por qué X no funciona” + DESBLOQUEA; reel de valores",
+       "Lo complejo, con palabras de la calle"
+      ],
+      [
+       "BOFU · casos",
+       "Que se imaginen logrando",
+       "Formato silla, alumna contando su proceso, fragmento real de sesión",
+       "Punto A, qué pasó en el medio, punto B. Entretenido"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Preguntas del formato silla"
+    },
+    {
+     "type": "olist",
+     "items": [
+      "¿Cómo estabas antes de entrar? ¿Qué se repetía en tu vida?",
+      "¿Qué habías probado antes y por qué no funcionó?",
+      "¿Qué te hizo decidirte?",
+      "¿Qué entendiste en Comprender que no habías visto antes?",
+      "¿Qué elegiste distinto y qué acción tomaste?",
+      "¿Cómo estás hoy? Un ejemplo concreto.",
+      "¿Qué le dirías a una mujer que hoy está donde estabas tú?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Calendario de historias",
+   "lead": "Una creencia distinta cada día. Valor, valor, valor y recién después el CTA.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Día",
+      "Objetivo",
+      "Creencia",
+      "Ejemplo"
+     ],
+     "rows": [
+      [
+       "Lunes",
+       "Autoridad → caso → mecanismo",
+       "“¿Por qué escucharla?”",
+       "Resultado de una alumna y cómo DESBLOQUEA la llevó ahí"
+      ],
+      [
+       "Martes",
+       "CTA a chat",
+       "“Esto es para mí”",
+       "“Si reaccionas igual aunque ya sabes por qué, respóndeme DESPIERTA”"
+      ],
+      [
+       "Miércoles",
+       "Romper objeciones",
+       "“No tengo tiempo / ya probé terapia”",
+       "Quiénes son las últimas mujeres que entraron y qué cambió"
+      ],
+      [
+       "Jueves",
+       "CTA de valor",
+       "“Ella sabe de esto”",
+       "Recurso gratis a cambio de una palabra clave"
+      ],
+      [
+       "Viernes",
+       "Producto por dentro",
+       "“¿Qué voy a recibir?”",
+       "Despierta por dentro: una clase, una devolución o el grupo"
+      ],
+      [
+       "Sábado",
+       "Mentalidad",
+       "“Quiero aprender de ella”",
+       "Cómo maneja sus propios disparadores"
+      ],
+      [
+       "Domingo",
+       "Vida y valores",
+       "“Es una persona real”",
+       "Un día tranquilo, sin venta"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Cómo se hace cada secuencia:** pensarla de atrás para adelante; una palabra grande por historia; contraste y márgenes; título corto en los videos hablados; pruebas reales junto a cada afirmación. Al cerrar: ¿la persona vivió una experiencia?"
+    },
+    {
+     "type": "p",
+     "text": "**Aperturas:** en la semana de apertura cada día suma cuenta atrás, plazas o días restantes y el link. Después del cierre, vuelve el valor y la lista de espera."
+    }
+   ]
+  },
+  {
+   "title": "Calendario de feed",
+   "lead": "Primera apertura propuesta: lunes 9 a domingo 15 nov, 23:59 (España). La lista de espera entra 24 h antes.",
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Semana 1 · Último Bootcamp y presentación de Despierta"
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Fecha",
+      "Función",
+      "Idea",
+      "CTA"
+     ],
+     "rows": [
+      [
+       "Lun 19 oct",
+       "MOFU",
+       "“Por qué entender tu herida no alcanza para dejar de repetirla”",
+       "Último Bootcamp: link en bio"
+      ],
+      [
+       "Mar 20 oct",
+       "BOFU",
+       "Caso de alumna: antes, proceso, después",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Mié 21 oct",
+       "TOFU",
+       "“Sabes exactamente qué tienes que cambiar… y aun así lo vuelves a hacer”",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Jue 22 oct",
+       "Por dentro",
+       "Clips del Día 2 del Bootcamp (Elegir)",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Vie 23 oct",
+       "MOFU",
+       "“Por qué dejé de hacer talleres de 3 días”",
+       "Lista de espera: DESPIERTA"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Semana 2 · Valor y lista de espera"
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Fecha",
+      "Función",
+      "Idea",
+      "CTA"
+     ],
+     "rows": [
+      [
+       "Lun 26 oct",
+       "TOFU",
+       "“¿Cuánto de lo que haces hoy lo decide la niña que fuiste?”",
+       "Compártelo"
+      ],
+      [
+       "Mar 27 oct",
+       "TOFU",
+       "Recurso: ejercicio “Pausa de 3 segundos”",
+       "Comenta PAUSA"
+      ],
+      [
+       "Mié 28 oct",
+       "MOFU",
+       "“Lo que dejé de hacer cuando entendí mi propia herida”",
+       "Sígueme"
+      ],
+      [
+       "Jue 29 oct",
+       "MOFU",
+       "Carrusel: por qué las afirmaciones no cambian un patrón",
+       "Guárdalo"
+      ],
+      [
+       "Vie 30 oct",
+       "BOFU",
+       "Formato silla con una alumna del Bootcamp",
+       "Lista de espera: DESPIERTA"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Semana 3 · Mecanismo, prueba y anuncio"
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Fecha",
+      "Función",
+      "Idea",
+      "CTA"
+     ],
+     "rows": [
+      [
+       "Lun 2 nov",
+       "TOFU",
+       "“Te pasa que pides perdón incluso cuando no hiciste nada”",
+       "Compártelo"
+      ],
+      [
+       "Mar 3 nov",
+       "MOFU",
+       "“Hice años de terapia y seguía igual. Esto fue lo que faltó”",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Mié 4 nov",
+       "MOFU",
+       "Fragmento de la entrevista en Tenerife Plus TV",
+       "Ver en destacadas"
+      ],
+      [
+       "Jue 5 nov",
+       "Por dentro",
+       "Una devolución real dentro de Despierta",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Vie 6 nov",
+       "BOFU + anuncio",
+       "Caso + “Despierta abre el lunes 9; es la única forma de trabajar conmigo”",
+       "Lista entra 24 h antes"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Semana 4 · Apertura de Despierta"
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Fecha",
+      "Función",
+      "Idea",
+      "CTA"
+     ],
+     "rows": [
+      [
+       "Lun 9 nov",
+       "BOFU",
+       "“Despierta está abierto”: qué es, para quién y casos del mes",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Mar 10 nov",
+       "MOFU",
+       "Los 3 pasos DESBLOQUEA dentro de Despierta",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Mié 11 nov",
+       "BOFU",
+       "Formato silla: segunda alumna, otro dolor",
+       "Comenta DESPIERTA"
+      ],
+      [
+       "Jue 12 nov",
+       "Objeciones",
+       "“No es el momento”, “ya probé terapia”, “no tengo tiempo”",
+       "Cierra el domingo"
+      ],
+      [
+       "Vie 13 nov",
+       "Escasez",
+       "“Cuando cierre el domingo, no hay otra forma de entrar. No hago 1 a 1”",
+       "Últimos días"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Sábado 14 y domingo 15: venta solo en historias, con cuenta atrás, casos y últimas horas."
+    }
+   ]
+  },
+  {
+   "title": "Ideas y métricas",
+   "blocks": [
+    {
+     "type": "olist",
+     "items": [
+      "**Formulario de onboarding:** por dónde la conoció, qué contenido la convenció, qué dolor la hizo comprar y qué tan convencida llegó (1 a 10).",
+      "**Llamadas:** los dolores que más se repiten son los temas de las historias de la semana siguiente.",
+      "**Estudio hacia atrás:** mirar por qué contenido entró la mejor alumna y hacer más de eso.",
+      "**Referentes:** tomar los formatos que ya les funcionaron a cuentas más grandes, no el contenido."
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Si pasa esto…",
+      "Significa",
+      "Priorizar"
+     ],
+     "rows": [
+      [
+       "Pocas conversaciones",
+       "No entra gente nueva",
+       "Más TOFU"
+      ],
+      [
+       "Chats, pero menos del 10% se anota o agenda",
+       "No confían o no entienden el método",
+       "Más MOFU"
+      ],
+      [
+       "Agendan, pero no cierran",
+       "No se imaginan lográndolo",
+       "Más BOFU"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
