@@ -246,9 +246,13 @@ function renderPlan(){
   const cfg=window.FIREBASE_CONFIG;
   if(!cfg||!window.firebase){ tasks=seed.map(t=>({...t})); renderTasks(); notice("Vista previa: falta conectar la base de datos, así que las tildes no se guardan."); return; }
   try{
+    tasks=seed.map(t=>({...t})); renderTasks();
     firebase.initializeApp(cfg);
-    col=firebase.firestore().collection("clients").doc(slug).collection("status");
-    col.onSnapshot(snap=>{
+    const fs=firebase.firestore();
+    try{ await fs.enablePersistence({synchronizeTabs:true}); }catch(e){}
+    const ref=fs.collection("clients").doc(slug).collection("status");
+    ref.onSnapshot(snap=>{
+      col=ref;
       const st={}; snap.docs.forEach(d=>st[d.id]=d.data());
       tasks=seed.map(t=>({...t, done:false, doneBy:null, doneAt:null, ...(st[t.id]||{})}));
       renderTasks();
