@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plan · Limitless</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="logo-limitless.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Cinzel:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Limitless (Marcos Osimano): one committed black-and-gold look. Layout: one column, sticky tabs, checklist + plan. */
+:root{
+  --bg:#0b0b0c; --surface:#141413; --surface-2:#1a1917; --fg:#f2ede2; --muted:#a39c8e; --line:#2b2722;
+  --accent:#c9a24a; --accent-2:#e6c77a; --accent-soft:#2a2214;
+  --urgent:#e0765f; --urgent-soft:#331a14; --high:#e6c77a; --high-soft:#2e2615; --mid:#a39c8e; --mid-soft:#1f1d1a;
+  --display:"Cinzel","Trajan Pro",Georgia,serif; --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg)}
+body{font-family:var(--body);font-size:15px;line-height:1.55;padding-top:env(safe-area-inset-top,0px)}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 72px}
+header.top{display:grid;gap:8px;padding-bottom:20px;border-bottom:1px solid var(--line);background:linear-gradient(var(--accent),var(--accent)) left bottom/72px 1px no-repeat}
+.brand{display:grid;justify-items:start;gap:2px;margin-bottom:14px}
+.brand-logo{width:min(260px,70vw);height:auto;display:block}
+.brand-sub{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);padding-left:6px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,5.4vw,40px);letter-spacing:.04em;line-height:1.1;margin:0;text-wrap:balance}
+.lede{color:var(--muted);margin:0;max-width:62ch}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding-block:12px;border-bottom:1px solid var(--line);display:grid;gap:10px}
+.tabs,.filters,.who{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.who{font-size:13px;color:var(--muted)}
+.chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:5px 12px;border-radius:99px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600}
+.tab{font:inherit;font-family:var(--display);letter-spacing:.08em;font-size:14px;background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);padding:6px 4px;margin-right:14px;cursor:pointer}
+.tab[aria-selected="true"]{color:var(--accent-2);border-color:var(--accent)}
+.chip:focus-visible,.tab:focus-visible,.check:focus-visible,.more:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.progress-row{display:flex;align-items:center;gap:12px}
+.meter{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden;min-width:0}
+.meter>span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0;transition:width .4s ease}
+.pct{font-variant-numeric:tabular-nums;font-weight:600;font-size:14px;white-space:nowrap}
+.notice{font-size:13px;color:var(--fg);background:var(--accent-soft);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+section.group{margin-top:26px}
+.group-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}
+.group-head h2{font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:.06em;margin:0;color:var(--accent-2)}
+.count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.group-note{font-size:13px;color:var(--muted);margin:-4px 0 10px}
+ul.rows{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+li.row{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:12px 14px;border-top:1px solid var(--line)}
+li.row:first-child{border-top:0}
+li.row.is-done .title{color:var(--muted);text-decoration:line-through}
+.check{appearance:none;width:22px;height:22px;margin:1px 0 0;border:2px solid var(--muted);border-radius:6px;cursor:pointer;display:grid;place-content:center;background:var(--surface)}
+.check:checked{background:var(--accent);border-color:var(--accent)}
+.check:checked::after{content:"";width:6px;height:11px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.check:disabled{cursor:not-allowed;opacity:.5}
+.body{min-width:0;display:grid;gap:4px}
+.title{font-weight:500}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--muted)}
+.pill{font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:2px 8px;border-radius:99px}
+.p-Urgente{color:var(--urgent);background:var(--urgent-soft)}
+.p-Alta{color:var(--high);background:var(--high-soft)}
+.p-Media{color:var(--mid);background:var(--mid-soft)}
+.tag{color:var(--fg);background:var(--mid-soft);border:1px solid var(--line)}
+.when{font-variant-numeric:tabular-nums}
+.when.late{color:var(--urgent);font-weight:600}
+.by{color:var(--accent-2);font-weight:500}
+.more{font:inherit;font-size:12.5px;background:none;border:0;padding:0;color:var(--accent);cursor:pointer;justify-self:start}
+.detail{font-size:13.5px;color:var(--muted);margin:2px 0 0;max-width:65ch}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:22px;color:var(--muted);text-align:center}
+/* Plan view */
+.plan h2{font-family:var(--display);font-weight:600;letter-spacing:.06em;color:var(--accent-2);font-size:22px;margin:34px 0 8px}
+.plan h3{font-family:var(--display);font-weight:500;letter-spacing:.04em;font-size:16px;margin:22px 0 8px}
+.plan p,.plan li{max-width:68ch}
+.plan .lead{color:var(--muted)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface);margin:8px 0}
+.tbl table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+.tbl th,.tbl td{text-align:left;vertical-align:top;padding:9px 12px;border-top:1px solid var(--line)}
+.tbl th{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;border-top:0;background:var(--surface-2)}
+.tbl td:first-child{white-space:nowrap;font-variant-numeric:tabular-nums}
+blockquote{margin:10px 0;padding:10px 14px;border-left:2px solid var(--accent);background:var(--surface);color:var(--fg)}
+footer{margin-top:40px;font-size:12.5px;color:var(--muted)}
+@media (prefers-reduced-motion: reduce){.meter>span{transition:none}}
+
+.who .chip{min-width:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg class="brand-logo" viewBox="0 0 640 150" role="img" aria-label="Limitless"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8913c"/><stop offset="0.5" stop-color="#ecd28c"/><stop offset="1" stop-color="#b8913c"/></linearGradient><radialGradient id="lstar" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff6d8"/><stop offset="0.35" stop-color="#ecd28c"/><stop offset="1" stop-color="#ecd28c" stop-opacity="0"/></radialGradient></defs><path d="M40 66 Q320 18 600 66" fill="none" stroke="url(#lg)" stroke-width="2.2" stroke-linecap="round"/><circle cx="320" cy="42" r="14" fill="url(#lstar)"/><path d="M320 18 L322.4 39.6 L344 42 L322.4 44.4 L320 66 L317.6 44.4 L296 42 L317.6 39.6 Z" fill="#f6e3a8"/><text x="320" y="132" text-anchor="middle" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-weight="300" font-size="62" letter-spacing="26" fill="url(#lg)">LIMITLESS</text></svg>
+      <div class="brand-sub">Marcos Osimano</div>
+    </div>
+    <div class="eyebrow" id="eyebrow">Plan de contenido</div>
+    <h1 id="title">Cargando el plan…</h1>
+    <p class="lede" id="lede"></p>
+  </header>
+
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-check" aria-selected="true" aria-controls="view-check">Checklist</button>
+      <button class="tab" role="tab" id="tab-plan" aria-selected="false" aria-controls="view-plan">El plan</button>
+    </div>
+    <div id="checkTools" style="display:grid;gap:10px">
+      <div class="progress-row">
+        <div class="meter" role="progressbar" aria-label="Avance total" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="meterFill"></span></div>
+        <div class="pct" id="pct">0 de 0 hechas</div>
+      </div>
+      <div class="who" id="who" role="group" aria-label="Quién marca">Marco como:</div>
+      <div class="filters" role="group" aria-label="Filtrar">
+        <button class="chip" data-f="all" aria-pressed="true">Todas</button>
+        <button class="chip" data-f="todo" aria-pressed="false">Pendientes</button>
+        <button class="chip" data-f="done" aria-pressed="false">Hechas</button>
+        <button class="chip" data-f="urgent" aria-pressed="false">Solo urgentes</button>
+      </div>
+    </div>
+    <div class="notice" id="notice" hidden></div>
+  </div>
+
+  <main id="view-check" role="tabpanel" aria-labelledby="tab-check"></main>
+  <main id="view-plan" class="plan" role="tabpanel" aria-labelledby="tab-plan" hidden></main>
+
+  <footer>Limitless · Marcos Osimano. Página privada de trabajo: no compartir el link públicamente.</footer>
+</div>
+
+<script src="config.js"></script>
+<script>
+const DEFAULT_GROUPS = [
+  {id:"fallas", name:"Fallas del perfil", note:"Ordenadas por prioridad. Lo urgente se corrige esta semana."},
+  {id:"setup", name:"Puesta a punto", note:"Lo que hay que tener listo para que el calendario funcione."},
+  {id:"feed", name:"Calendario de feed", note:"Marcar cada pieza cuando esté publicada."},
+  {id:"rutina", name:"Rutina semanal", note:"Historias con el calendario de creencias y revisión de métricas cada domingo."}
+];
+const MONTHS=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+let client=null, groups=DEFAULT_GROUPS, tasks=[], filter="all", col=null, who=null;
+const openDetails=new Set();
+const $=id=>document.getElementById(id);
+function el(tag,cls,text){const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e;}
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function fmtDate(iso){ if(!iso) return ""; const [y,m,d]=iso.split("-").map(Number); return d+" "+MONTHS[m-1]; }
+function todayIso(){ const t=new Date(); return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0"); }
+function notice(msg){ const n=$("notice"); n.textContent=msg||""; n.hidden=!msg; }
+
+/* --- tabs & filters --- */
+function showTab(plan){
+  $("tab-check").setAttribute("aria-selected",!plan); $("tab-plan").setAttribute("aria-selected",plan);
+  $("view-check").hidden=plan; $("view-plan").hidden=!plan; $("checkTools").style.display=plan?"none":"grid";
+}
+$("tab-check").addEventListener("click",()=>showTab(false));
+$("tab-plan").addEventListener("click",()=>showTab(true));
+document.querySelectorAll("[data-f]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.f; document.querySelectorAll("[data-f]").forEach(x=>x.setAttribute("aria-pressed",x===b)); renderTasks();}));
+
+function setupWho(){
+  const box=$("who"); const people=client.people||["Marcos"];
+  who=lsGet("plan-who-"+client.slug);
+  people.forEach(p=>{ const b=el("button","chip",p); b.type="button"; b.setAttribute("aria-pressed",p===who);
+    b.addEventListener("click",()=>{ who=p; lsSet("plan-who-"+client.slug,p); box.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b)); }); box.append(b); });
+}
+
+/* --- checklist --- */
+function renderTasks(){
+  const total=tasks.length, done=tasks.filter(t=>t.done).length, pct=total?Math.round(done*100/total):0;
+  $("meterFill").style.width=pct+"%"; document.querySelector(".meter").setAttribute("aria-valuenow",pct);
+  $("pct").textContent=done+" de "+total+" hechas";
+  const main=$("view-check"); main.replaceChildren(); const today=todayIso();
+  for(const g of groups){
+    const all=tasks.filter(t=>t.group===g.id).sort((a,b)=>(a.order||0)-(b.order||0)); if(!all.length) continue;
+    const shown=all.filter(t=>filter==="all"||(filter==="todo"&&!t.done)||(filter==="done"&&t.done)||(filter==="urgent"&&t.priority==="Urgente"));
+    const sec=el("section","group"); const head=el("div","group-head");
+    head.append(el("h2",null,g.name), el("span","count",all.filter(t=>t.done).length+" / "+all.length));
+    sec.append(head); if(g.note) sec.append(el("p","group-note",g.note));
+    if(!shown.length){ sec.append(el("div","empty","Nada en este filtro.")); main.append(sec); continue; }
+    const ul=el("ul","rows");
+    for(const t of shown){
+      const li=el("li","row"+(t.done?" is-done":""));
+      const cb=el("input","check"); cb.type="checkbox"; cb.id="cb-"+t.id; cb.checked=!!t.done; cb.disabled=!col;
+      cb.addEventListener("change",()=>toggle(t,cb.checked,cb));
+      const body=el("div","body"); const title=el("label","title",t.title); title.htmlFor=cb.id;
+      const meta=el("div","meta");
+      if(t.priority) meta.append(el("span","pill p-"+t.priority,t.priority));
+      if(t.tag) meta.append(el("span","pill tag",t.tag));
+      if(t.due) meta.append(el("span","when"+(!t.done&&t.due<today?" late":""), t.dueLabel||fmtDate(t.due)));
+      if(t.done) meta.append(el("span","by","Hecho por "+(t.doneBy||"alguien")+(t.doneAt?" · "+fmtDate(t.doneAt.slice(0,10)):"")));
+      body.append(title,meta);
+      if(t.detail){
+        const open=openDetails.has(t.id); const btn=el("button","more",open?"Ocultar detalle":"Ver detalle"); btn.type="button"; btn.setAttribute("aria-expanded",open);
+        const d=el("p","detail",t.detail); d.hidden=!open;
+        btn.addEventListener("click",()=>{const o=!openDetails.has(t.id); o?openDetails.add(t.id):openDetails.delete(t.id); d.hidden=!o; btn.textContent=o?"Ocultar detalle":"Ver detalle"; btn.setAttribute("aria-expanded",o);});
+        body.append(btn,d);
+      }
+      li.append(cb,body); ul.append(li);
+    }
+    sec.append(ul); main.append(sec);
+  }
+}
+async function toggle(t,value,cb){
+  if(!col){cb.checked=!value;return;}
+  if(value&&!who){ cb.checked=false; notice("Elegí arriba quién está marcando y volvé a tildar."); return; }
+  cb.disabled=true;
+  try{ await col.save(t.id,{done:value,doneBy:value?who:null,doneAt:value?new Date().toISOString():null}); notice(""); }
+  catch(e){ cb.checked=!value; notice("No se pudo guardar el cambio. Revisá la conexión y probá de nuevo."); }
+  finally{ cb.disabled=false; }
+}
+
+/* --- plan (rendered from JSON blocks; text only, never HTML) --- */
+function inline(parent,text){ // supports **bold**
+  String(text).split(/(\*\*[^*]+\*\*)/g).forEach(part=>{
+    if(/^\*\*[^*]+\*\*$/.test(part)) parent.append(el("strong",null,part.slice(2,-2))); else if(part) parent.append(document.createTextNode(part));
+  });
+  return parent;
+}
+function renderPlan(){
+  const main=$("view-plan"); main.replaceChildren();
+  for(const s of (client.plan||[])){
+    main.append(el("h2",null,s.title));
+    if(s.lead) main.append(inline(el("p","lead"),s.lead));
+    for(const b of (s.blocks||[])){
+      if(b.type==="p") main.append(inline(el("p"),b.text));
+      else if(b.type==="h3") main.append(el("h3",null,b.text));
+      else if(b.type==="quote") main.append(inline(el("blockquote"),b.text));
+      else if(b.type==="list"||b.type==="olist"){ const l=el(b.type==="list"?"ul":"ol"); b.items.forEach(i=>l.append(inline(el("li"),i))); main.append(l); }
+      else if(b.type==="table"){ const w=el("div","tbl"), tb=el("table"), hr=el("tr");
+        b.columns.forEach(c=>hr.append(el("th",null,c))); tb.append(hr);
+        b.rows.forEach(r=>{ const tr=el("tr"); r.forEach(c=>tr.append(inline(el("td"),c))); tb.append(tr); });
+        w.append(tb); main.append(w); }
+    }
+  }
+}
+
+/* --- boot --- */
+(async()=>{
+  const slug=(new URLSearchParams(location.search).get("c")||"").toLowerCase();
+  if(!/^[a-z0-9-]{3,60}$/.test(slug)){ $("title").textContent="Falta el código del plan"; $("lede").textContent="Abrí el link completo que te pasó Marcos."; $("checkTools").style.display="none"; return; }
+  try{ const r=await fetch("clients/"+slug+".json",{cache:"no-store"}); if(!r.ok) throw 0; client=await r.json(); client.slug=slug; }
+  catch(e){ $("title").textContent="No encontramos este plan"; $("lede").textContent="Revisá que el link esté completo."; $("checkTools").style.display="none"; return; }
+  document.title=client.name+" · Limitless";
+  $("eyebrow").textContent=[client.handle,client.period].filter(Boolean).join(" · ");
+  $("title").textContent=client.name; $("lede").textContent=client.lede||"";
+  if(client.groups) groups=client.groups;
+  setupWho(); renderPlan();
+  const seed=client.tasks||[];
+  const cfg=window.FIREBASE_CONFIG;
+  if(!cfg){ tasks=seed.map(t=>({...t})); renderTasks(); notice("Vista previa: falta conectar la base de datos, así que las tildes no se guardan."); return; }
+  try{
+    tasks=seed.map(t=>({...t})); renderTasks();
+    const A=await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js");
+    const F=await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js");
+    const app=A.initializeApp(cfg);
+    const dbId=window.FIREBASE_DB||"(default)";
+    let fs;
+    try{ fs=F.initializeFirestore(app,{localCache:F.persistentLocalCache({tabManager:F.persistentMultipleTabManager()})},dbId); }
+    catch(err){ fs=F.getFirestore(app,dbId); }
+    const ref=F.collection(fs,"clients",slug,"status");
+    F.onSnapshot(ref, snap=>{
+      col={save:(id,data)=>F.setDoc(F.doc(ref,id),data)};
+      const st={}; snap.docs.forEach(d=>st[d.id]=d.data());
+      tasks=seed.map(t=>({...t, done:false, doneBy:null, doneAt:null, ...(st[t.id]||{})}));
+      renderTasks();
+    }, ()=>{ col=null; tasks=seed.map(t=>({...t})); renderTasks(); notice("No se pudo conectar con la base de datos. Revisá config.js y las reglas de Firestore."); });
+  }catch(e){ col=null; tasks=seed.map(t=>({...t})); renderTasks(); notice("No se pudo conectar con la base de datos. Revisá config.js y las reglas de Firestore."); }
+})();
+</script>
+</body>
+</html>

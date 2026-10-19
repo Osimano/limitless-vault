@@ -8,3 +8,5 @@ window.FIREBASE_CONFIG = {
   messagingSenderId: "744758560596",
   appId: "1:744758560596:web:fc8cc1d81fadd1aabb2ac1"
 };
+// Nombre de la base de datos de Firestore de este proyecto.
+window.FIREBASE_DB = "default";
